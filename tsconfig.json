@@ -11,7 +11,7 @@
     "target": "es2018",
     "types": ["node"],
     // For nodejs:
-    "lib": ["esnext", "DOM"]
+    "lib": ["esnext", "DOM"],
 
     // Other Outputs
     "sourceMap": true,

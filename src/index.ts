@@ -23,10 +23,10 @@ app.get('/', function(req, res) {
     res.render('input.njk');
 });
 
-app.get("/:id", async (req, res) => {
+app.get("/:hash", async (req, res) => {
     try {
-        const fileContent = await readNote(req.params.id);
-        await deleteNote(req.params.id);
+        const fileContent = await readNote(req.params.hash);
+        await deleteNote(req.params.hash);
         res.render("output.njk", {
             message: fileContent
         });
